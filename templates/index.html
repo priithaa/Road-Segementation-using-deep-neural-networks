@@ -1,0 +1,48 @@
+   
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Roads Segmentation</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/form_upload.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+    <div class="form-here" style="display: block;">
+    <form class="form-upload" method=post enctype=multipart/form-data>
+      <h1 class="h3 mb-3 font-weight-normal">Roads Segmentation Model using Deep Neural Networks</h1>
+      <br>
+      <h6>Upload a new File</h6>
+      <input type="file" id="image" name="image" class="form-control"  required autofocus>
+      <br>
+      <button class="btn btn-lg btn-primary btn-block" input type=submit value=Predict>Segment</button>
+      <br>
+    </form>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        {% if image %}
+        <h3>Input Image</h3>
+        <img src="{{image_in}}" class="input-img" alt="" heigth=500 width=500>
+        <!-- for the original Image that was uplaoded -->
+        {%endif%}
+      </div>
+      <div class="col">
+        {% if image %}
+        <h3>Output Image</h3>
+          <img src="{{image}}" class="output-img" alt={{prediction }} heigth=500 width=500 >
+          <!-- For the predicted file -->
+        {%endif%}
+    </div>
+    </div>
+  </body>
+</html>
