@@ -17,13 +17,13 @@ This GUI deploys a model trained using the UNET model to achieve image segmentat
 
 ## Screenshots
 
-###Image Segementation
+### Image Segementation
 ![Input](Screenshots\one.png)
 Lets say this is the input image
 ![Output](Screenshots\output\one.png)
 SO this is the output with normal roads also marked as 1 and dirt roads also marked as one
 
-###GUI
+### GUI
 
 ![GUI](Screenshots\GUI\Clean.png)
 Before any segmentation, but once you upload your image and click segment.
